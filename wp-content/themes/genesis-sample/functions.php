@@ -134,6 +134,30 @@ function genesis_sample_secondary_menu_args( $args ) {
 
 }
 
+add_filter('genesis_after_footer', 'addscripts');
+function addscripts(){
+	?>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery(window).scroll(function(){
+			  var sticky = jQuery('.site-header'),
+			      scroll = jQuery(window).scrollTop();
+
+			  if (scroll > 5) sticky.addClass('fixed');
+			  else sticky.removeClass('fixed');
+			});
+		});
+	</script>
+	<?php
+}
+
+//* This cheat will help  to customize genesis footer credit area.
+add_filter('genesis_footer_creds_text', 'footer_creds_filter');
+function footer_creds_filter( $editthecredit ) {
+  $editthecredit = '&copy; 2017 - WebLifeStyles - All Rights Reserved';
+  return $editthecredit ;
+}
+
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 function genesis_sample_author_box_gravatar( $size ) {
@@ -149,3 +173,14 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+// remove genesis site wide page title
+remove_action('genesis_entry_header', 'genesis_do_post_title');
+
+//remove emoji bloat
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );

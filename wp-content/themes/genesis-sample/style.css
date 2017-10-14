@@ -1,9 +1,9 @@
 /*
-	Theme Name: Genesis Child
+	Theme Name: Genesis Sample
 	Theme URI: http://www.studiopress.com/
-	Description: Extending the sample genesis theme
-	Author: MF
-	Author URI: prodetailing.com
+	Description: This is the sample theme created for the Genesis Framework.
+	Author: StudioPress
+	Author URI: http://www.studiopress.com/
 
 	Version: 2.3.0
 
@@ -15,7 +15,7 @@
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-	Text Domain: genesis-child
+	Text Domain: genesis-sample
 */
 
 
@@ -159,7 +159,7 @@ body > div {
 body {
 	background-color: #eee;
 	color: #333;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	font-size: 2rem;
 	-webkit-font-smoothing: antialiased;
@@ -260,7 +260,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
 	line-height: 1.2;
 	margin: 0 0 10px;

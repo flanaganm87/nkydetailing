@@ -36,6 +36,6 @@ do_action( 'genesis_after_header' );
 
 genesis_markup( array(
 	'open'   => '<div %s>',
-	'context' => 'site-inner',
+	'context' => 'container',
 ) );
 genesis_structural_wrap( 'site-inner' );

@@ -154,7 +154,7 @@ function addscripts(){
 //* This cheat will help  to customize genesis footer credit area.
 add_filter('genesis_footer_creds_text', 'footer_creds_filter');
 function footer_creds_filter( $editthecredit ) {
-  $editthecredit = '&copy; 2017 - WebLifeStyles - All Rights Reserved';
+  $editthecredit = '&copy; 2017 - Northern Kentucky Detailing - All Rights Reserved';
   return $editthecredit ;
 }
 

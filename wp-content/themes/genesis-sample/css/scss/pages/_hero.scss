@@ -1,0 +1,19 @@
+//
+// styles for hero sections, displaying featured page/post images
+//
+//
+.page-header{
+	background-attachment: fixed;
+}
+.page-header:before, .front-page-4:before, .before-footer:before{
+	background-color: none !important;
+}
+.page-header:before{
+	background-color: rgba(20,30,40,.82) !important; 
+} 
+.full_section_padding{
+	padding: 125px 50px;
+	@media (max-width: 550px){
+		padding: 50px 25px;
+	}
+}
